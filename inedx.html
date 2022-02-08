@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .game{
+        width: 255px;
+    text-align: center;
+    /* margin: auto; */
+    color: white;
+    font-weight: 500;
+    font-family: system-ui;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    }
+    .title{
+        background:#05c46b ;
+        padding: 5px 0 ;
+        margin: 5px o;
+    }
+    span{
+        color: #ff9f43;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .saq{
+        width: 80px;
+        height: 80px;
+        float: left;
+        background:#27ae60 ;
+        margin: 2px;
+        font-size: 50px;
+    }
+    .saq:hover{
+        background: #1e272e;
+        cursor: pointer;
+    }
+    .mid{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+
+    }
+    strong{
+        color: #ff9f43;
+    }
+</style>
+
+<body>
+    <div class="game">
+        <h1 class="box"> Let's <strong>Goo</strong> </h1>
+        <div class="title"> <span> X O</span> GAME</div>
+        <div class="saq" id="item1" onclick="game(this.id)"></div>
+        <div class="saq" id="item2" onclick="game(this.id)"></div>
+        <div class="saq" id="item3" onclick="game(this.id)"></div>
+        <div class="saq" id="item4" onclick="game(this.id)"></div>
+        <div class="saq" id="item5" onclick="game(this.id)"></div>
+        <div class="saq" id="item6" onclick="game(this.id)"></div>
+        <div class="saq" id="item7" onclick="game(this.id)"></div>
+        <div class="saq" id="item8" onclick="game(this.id)"></div>
+        <div class="saq" id="item9" onclick="game(this.id)"></div>
+        <div>copyright &copy;2022 simo_bl</div>
+        
+    </div>
+    <div class="mid">
+        <video src="1.mp4" autoplay muted loop ></video>
+    </div>
+    
+    <script src="game.js"></script>
+    
+    
+</body>
+</html>
